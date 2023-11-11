@@ -36,7 +36,13 @@ public class MapaActivity extends AppCompatActivity implements OnMapReadyCallbac
         this.mMap.setOnMapClickListener(this);
         this.mMap.setOnMapLongClickListener(this);
         LatLng chillan = new LatLng(-36.60664, -72.10344);
+        LatLng temuco = new LatLng(-38.73965, -72.59842);
+        LatLng concepcion = new LatLng(-36.82699, -73.04977);
+        LatLng santiago = new LatLng(-33.45694, -70.64827);
         mMap.addMarker(new MarkerOptions().position(chillan).title("Yo"));
+        mMap.addMarker(new MarkerOptions().position(temuco).title("Temuco"));
+        mMap.addMarker(new MarkerOptions().position(concepcion).title("Concepcion"));
+        mMap.addMarker(new MarkerOptions().position(santiago).title("Santiago de Chile"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(chillan));
     }
 
